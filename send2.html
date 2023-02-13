@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obrazek</title>
+    <link rel="stylesheet" href="CSS/styles2.css">
+</head>
+
+<body>
+    
+    <header>
+        <center><ul class="menu">
+            <li><a href="login.php">Zaloguj</a></li>
+            <li><a href="register.php">Zajerestruj</a></li>
+            <li><a href="logout.php">Wyloguj</a></li>
+        </ul></center>
+		<h1 class="logo"><img class="beczka" src="logo2.png" alt="logo" id="logo"></h1>
+		
+		<nav id="topnav">
+		
+			<ul class="menu">
+				<li><a href="send1.html">Muzyka</a></li>
+				<li><a href="send2.html">Obrazki</a></li>
+				<li><a href="send3.html">Notatki</a></li>
+				<li><a href="send4.html">Czat</a></li>
+			</ul>
+			
+		</nav>
+        <nav id="topnav">
+		
+			<ul class="menu">
+				<li><a href="show1.php">Muzyka/Pokaż</a></li>
+				<li><a href="show2.php">Obrazki/Pokaż</a></li>
+				<li><a href="show3.php">Notatki/Pokaż</a></li>
+                <!--<li><a href="show4.html">Czat</a></li> -->
+			</ul>
+			
+		</nav>
+	
+	</header>
+      <div id="narzedia">
+        <h1>Draw</h1>
+        <label for="strok">Stroke</label>
+        <input id="stroke" name='stroke' type="color">
+        <label for="lineWidth">Line Width</label>
+        <input id="lineWidth" name='lineWidth' type="number" value="5">
+        <button id="clear">Clear</button>
+    </div>
+    <div class="rysuj">
+        <canvas id="rysuj" style="background-color: white;"></canvas>
+    </div>
+    
+    <center><script src="js/image.js"></script><button onclick="convert()">Zapisz</button></center>
+ 
+    <article>
+        <form action="send2.php" method="post">
+            <label for="IMG_id">Nazwa obrazka:</label><br><input type="text" name="IMG_id"><br>
+            <label for="des">Opis:</label><br><input type="text" name="des"><br>
+            <label for="data">Data:</label><br><input type="date" name="data"><br>
+            <label for="base64">Base64:</label><br><input type="text" id="dane" name="base64" maxlength="524,288"><br>
+            <input type="submit"><br>
+        </form>
+    </article>
+</body>
+</html>

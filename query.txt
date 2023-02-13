@@ -1,0 +1,32 @@
+create table sound (
+	id int auto_increment primary key,
+	name varchar(50),
+    czas date,
+    autor varchar(20),
+    tempo int(4),
+    opis varchar(150)
+);
+create table image (
+	id int auto_increment primary key,
+	name varchar(50),
+    czas date,
+    autor varchar(20),
+    res varchar(10),
+    opis varchar(150)
+);
+create table notes(
+	id int auto_increment primary key,
+	name varchar(50),
+    czas date,
+    autor varchar(20),
+    len int(5),     
+    opis varchar(150)
+);
+create table chat (
+	id int auto_increment primary key,
+	uzytkownik varchar(50),
+    czas date,
+    tresc varchar(50),
+    kolor varchar(10),
+    direct_msg int(10)    
+);

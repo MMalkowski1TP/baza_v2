@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muzyka</title>
+    <link rel="stylesheet" href="CSS/styles1.css">
+</head>
+
+<body>
+    <header>
+      <center><ul class="menu">
+				<li><a href="login.php">Zaloguj</a></li>
+				<li><a href="register.php">Zajerestruj</a></li>
+				<li><a href="logout.php">Wyloguj</a></li>
+			</ul></center>
+		<h1 class="logo"><img class="beczka" src="logo1.png" alt="logo" id="logo"></h1>
+		
+		<nav id="topnav">
+		
+			<ul class="menu">
+				<li><a href="send1.html">Muzyka</a></li>
+				<li><a href="send2.html">Obrazki</a></li>
+				<li><a href="send3.html">Notatki</a></li>
+				<li><a href="send4.html">Czat</a></li>
+			</ul>
+			
+		</nav>
+        <nav id="topnav">
+		
+			<ul class="menu">
+				<li><a href="show1.php">Muzyka/Pokaż</a></li>
+				<li><a href="show2.php">Obrazki/Pokaż</a></li>
+				<li><a href="show3.php">Notatki/Pokaż</a></li>
+                <!--<li><a href="show4.html">Czat</a></li> -->
+			</ul>
+			
+		</nav>
+	
+	</header>
+    <script src="js/Tone.js"></script>
+    <script src="js/midi-writer-js.js"></script>
+    <script src="js/sound.js"></script>
+            <table>
+              <tr>
+                <th>B</th>
+                <td><button id="B1" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B2" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B3" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B4" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B5" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B6" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B7" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B8" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B9" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B10" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B11" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "B12" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+              </tr>
+              <tr>
+                <th>A</th>
+                <td><button id = "A1" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A2" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A3" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A4" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A5" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A6" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A7" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A8" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A9" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A10" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A11" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "A12" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+              </tr>
+              <tr>
+                <th>G</th>
+                <td><button id = "G1" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G2" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G3" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G4" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G5" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G6" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G7" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G8" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G9" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G10" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G11" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "G12" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+              </tr>
+              <tr>
+                <th>F</th>
+                <td><button id = "F1" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F2" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F3" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F4" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F5" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F6" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F7" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F8" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F9" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F10" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F11" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "F12" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+              </tr>
+              <tr>
+                <th>E</th>
+                <td><button id = "E1" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E2" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E3" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E4" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E5" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E6" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E7" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E8" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E9" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E10" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E11" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "E12" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+              </tr>
+              <tr>
+                <th>D</th>
+                <td><button id = "D1" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D2" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D3" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D4" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D5" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D6" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D7" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D8" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D9" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D10" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D11" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "D12" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+              </tr>
+              <tr>
+                <th>C</th>
+                <td><button id = "C1" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C2" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C3" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C4" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C5" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C6" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C7" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C8" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C9" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C10" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C11" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                <td><button id = "C12" onclick="cursor(this.id)" style="background-color: gray;"></button></td>
+                
+            </tr>
+              
+            </table>
+            <center><button onclick="play()">Play</button><button onclick="convert_base64()">Submit</button></center>
+    </script>
+    <article>
+        <form action="send1.php" method="post">
+            <label for="user">Użytkownik:</label><br><input type="text" name="user" value="Imię"><br>
+            <label for="name">Nazwa_medlodii:</label><br><input type="text" name="name"><br>
+            <label for="des">Opis:</label><br><input type="text" name="des"><br>
+            <label for="sound_base64">Base64_data:</label><br><input type="text" name="dane" id="dane" value=""><br>
+            <label for="date">Date:</label><br><input type="date" name="date" id="dane"><br>
+            <input type="submit"><br>
+        </form>
+    </article>
+</body>
+</html>
